@@ -1,0 +1,297 @@
+body {
+    background: url(images/i.jfif) top/100% no-repeat black;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    background: url(images/logo2.png) center/130px auto;
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+}
+
+.logo-center {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.comin {
+    font-size: 78px;
+    color: #eeeeee;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.minitext {
+    display: flex;
+    justify-content: center;
+    color: #bdbdbd;
+    margin-bottom: 100px;
+}
+
+.minitext p {
+    margin: 0;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.timer-menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 200px 0 200px;
+    height: auto;
+}
+
+.timer {
+    color: white;
+    font-size: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 178px;
+    height: 179px;
+    background-image: url(images/shurik.png);
+    font-family: 'Playfair Display', serif;
+}
+
+.timerinfo {
+    font-family: 'Poppins', sans-serif;
+    width: 180px;
+    color: #9e9e9e;
+    font-size: 25px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.menu {
+    background-image: url(images/menu.png);
+    top: 50%;
+    transform: translateY(-50%);
+    position: fixed;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 600px;
+    align-items: center;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    background: center/50px auto no-repeat;
+    margin: 15px 0 15px 0;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.r {
+    background-image: url(images/R.png);
+}
+
+.s {
+    background-image: url(images/S.png);
+}
+
+.e {
+    background-image: url(images/e.png);
+}
+
+.m {
+    background-image: url(images/m.png);
+}
+
+.d {
+    background-image: url(images/d.png);
+}
+
+.registerFon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    display: none;
+    transition: .5s;
+    opacity: 0%;
+}
+
+.registerForm {
+    transition: .5s;
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 1rem 0 rgba(41, 39, 39, 0.4);
+    border-radius: 3px;
+    background: url(images/i.jfif) center/130% no-repeat;
+    z-index: 2;
+    overflow: hidden;
+    opacity: 0%;
+}
+
+.reg {
+    width: 260px;
+    background: url(images/Register.png) center/100% auto no-repeat;
+}
+
+.mainReg {
+    margin: 70px 0 0 0;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 375px;
+}
+
+.inp {
+    width: 250px;
+    color: white;
+    height: 25px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    font-size: 22px;
+    padding: 0 10px 0 10px;
+}
+
+.inp:focus {
+    border-bottom: 2px solid red;
+    outline: none;
+}
+
+.inp::placeholder {
+    color: #E3E3E3;
+    font-size: 18px;
+}
+
+.enterReg {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.ok,
+.cencel {
+    margin: 50px 0 0 0;
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 120px;
+    height: 60px;
+    background: url(images/buttonOk.png) center/100% auto no-repeat;
+    transition: .2s;
+}
+
+.cencel {
+    background: url(images/cencel.png) center/85% auto no-repeat;
+}
+
+.ok:hover,
+.cencel:hover {
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+
+/*///////////Main///////////////////////////////////////////////////*/
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 2000px;
+    width: 1245px;
+    margin: 120px auto 0 auto;
+    border: 1px solid white;
+
+    color: white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(0, 0, 0) 45%);
+
+}
+
+.kinolist {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 1225px;
+}
+
+.blockForKino {
+    margin: 10px;
+    width: 225px;
+    height: 380px;
+    border: 1px solid white;
+}
+
+.photoKino {
+    width: auto;
+    height: 320px;
+    background: url(images/photokino.png) bottom no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    transition: .3s;
+    z-index: 5;
+}
+
+.textKino {
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+    width: auto;
+    height: auto;
+}
+
+.textKino p {
+    margin: 0;
+}
+
+.nameKino {
+    opacity: 80%;
+}
+
+.sposobOplatyKino {
+    font-size: 15px;
+    opacity: 100%;
+    color: #00a5ff;
+}
+
+.reitingWindow{
+    display: block;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 205px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 70%;
+    z-index: 2;
+    padding: 10px;
+    opacity: 0%;
+    transition: 0.2s;
+}
+.reitingWindow:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+.reting, .sujet{
+    width: 100%;
+}
+.reting{
+    font-size: 60px;
+    color: #FF4747;
+}
+.info{
+    margin: 50px 0 0 0;
+    font-size: 32px;
+}
